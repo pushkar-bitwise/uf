@@ -1,7 +1,11 @@
-import java.lang.Number;
+import com.caseInfo;
 
 rule "MyRule"
 	dialect "mvel"
 	when
+		caseInfo( reasonCode == 144 )
 	then
+		caseInfo fact0 = new caseInfo();
+		fact0.setResult( "Resolvecase" );
+		insert( fact0 );
 end
