@@ -6,6 +6,6 @@ rule "MyRule"
 		caseInfo( reasonCode == 144 )
 	then
 		caseInfo fact0 = new caseInfo();
-		fact0.setResult( "Resolvecase" );
+		fact0.setResult( "Resolvecase1" );
 		insert( fact0 );
 end
