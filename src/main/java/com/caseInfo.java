@@ -6,12 +6,58 @@ package com;
 
 public class caseInfo implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public caseInfo() {
-    }
+	@org.kie.api.definition.type.Label(value = "caseId")
+	private java.lang.Integer caseId;
+	@org.kie.api.definition.type.Label(value = "reasonCode")
+	private java.lang.Integer reasonCode;
+	@org.kie.api.definition.type.Label(value = "cardType")
+	private java.lang.String cardType;
+	@org.kie.api.definition.type.Label(value = "result")
+	private java.lang.String result;
 
+	public caseInfo() {
+	}
 
+	public java.lang.Integer getCaseId() {
+		return this.caseId;
+	}
 
+	public void setCaseId(java.lang.Integer caseId) {
+		this.caseId = caseId;
+	}
+
+	public java.lang.Integer getReasonCode() {
+		return this.reasonCode;
+	}
+
+	public void setReasonCode(java.lang.Integer reasonCode) {
+		this.reasonCode = reasonCode;
+	}
+
+	public java.lang.String getCardType() {
+		return this.cardType;
+	}
+
+	public void setCardType(java.lang.String cardType) {
+		this.cardType = cardType;
+	}
+
+	public java.lang.String getResult() {
+		return this.result;
+	}
+
+	public void setResult(java.lang.String result) {
+		this.result = result;
+	}
+
+	public caseInfo(java.lang.Integer caseId, java.lang.Integer reasonCode,
+			java.lang.String cardType, java.lang.String result) {
+		this.caseId = caseId;
+		this.reasonCode = reasonCode;
+		this.cardType = cardType;
+		this.result = result;
+	}
 
 }
