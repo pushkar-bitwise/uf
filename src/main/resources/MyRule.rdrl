@@ -8,4 +8,5 @@ rule "MyRule"
 		caseInfo fact0 = new caseInfo();
 		fact0.setResult( "Resolvecase1" );
 		insert( fact0 );
+		System.out.println( "Case resolved.." + fact0.getResult());
 end
